@@ -8,6 +8,7 @@
         Dim str4 As String
         Dim str5 As String
         Dim str6 As String
+        Dim asciistr as integer
 
         Dim length As String
 
@@ -33,6 +34,9 @@
         'Small Letters
         str6 = LCase(str1)
         Tb6.Text = str6
+        'Ascii of First Character of String
+        asciistr=Asc(str1)
+        Messagebox1.Show("Ascii of First Character" & asciistr)
 
     End Sub
 End Class
