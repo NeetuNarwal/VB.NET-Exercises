@@ -28,4 +28,10 @@
         ComboBox1.Items.Clear()
         MsgBox("All items remove from comboBox")
     End Sub
+    Private Sub btnmove_Click(sender As System.Object, e As System.EventArgs) Handles btnmove.Click
+          Dim i As Integer
+        For i = 0 To ComboBox1.Items.Count - 1
+            ComboBox2.Items.Add(ComboBox1.Items(i))
+
+        Next
 End Class
