@@ -26,4 +26,11 @@
         ListBox1.Items.Clear()
         MsgBox("All items removed from list box")
     End Sub
+    Private Sub btnmove_Click(sender As System.Object, e As System.EventArgs) Handles btnmove.Click
+          Dim i As Integer
+        For i = 0 To ListBox1.Items.Count - 1
+            ListBox2.Items.Add(ListBox1.Items(i))
+
+        Next
+    Messagebox.Show("Moved all items")
 End Class
