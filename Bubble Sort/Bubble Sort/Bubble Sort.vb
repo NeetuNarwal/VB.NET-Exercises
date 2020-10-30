@@ -22,7 +22,9 @@ End Class
 
 Private Sub BubbleSort(ByRef numbers() As Integer)
     Dim temp
-    Dim switch = True
+Dim x as Integer
+Dim switch as Boolean
+switch=True
     While switch
         switch = False
         For x = 0 To numbers.Length - 2
