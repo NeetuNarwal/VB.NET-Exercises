@@ -6,16 +6,16 @@
 
         age = Tb1.Text
         msg = Tb2.Text
-
-        If age <= 13 Then
+        Select case age
+        case <=13
             Tb2.Text = "you are a child"
-        ElseIf age <= 21 Then
+        Case  <= 21 
             Tb2.Text = "you are a teenager"
-        ElseIf age <= 65 Then
+        Case <= 65 
             Tb2.Text = "you are an adult"
-        ElseIf age > 65 Then
+        Case  > 65 
             Tb2.Text = "you are old"
-        End If
+        End Select
 
     End Sub
 End Class
