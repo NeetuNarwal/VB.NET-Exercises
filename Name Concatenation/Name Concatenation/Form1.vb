@@ -8,8 +8,12 @@
 
         FirstName = Tb1.Text
         SecondName = Tb2.Text
-
-        Tb3.Text = " Hello, " + FirstName + " " + SecondName
+        If FirstName <> "" then
+            Tb3.Text="Hello Mr/Ms." & FirstName
+            if SecondName <> "" then
+                Tb3.Text = " Hello, " & FirstName + " " & SecondName
+            End If
+        End if
 
     End Sub
 End Class
